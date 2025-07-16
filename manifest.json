@@ -1,0 +1,19 @@
+{
+  "manifest_version": 1,
+  "name": "Focustube - Focus on what matters",
+  "version": "1.0",
+  "description": "Hide distractions on YouTube. Just see what you want to see.",
+  "permissions": ["storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
