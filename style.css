@@ -1,0 +1,161 @@
+body.focus-mode #related,
+body.focus-mode #comments,
+body.focus-mode ytd-rich-grid-renderer,
+body.focus-mode ytd-browse[page-subtype="home"],
+body.focus-mode ytd-mini-guide-renderer,
+body.focus-mode ytd-guide-renderer,
+body.focus-mode #masthead-ad,
+body.focus-mode ytd-merch-shelf-renderer,
+body.focus-mode ytd-reel-shelf-renderer,
+body.focus-mode #secondary,
+body.focus-mode ytd-watch-next-secondary-results-renderer,
+body.focus-mode ytd-watch-flexy[flexy] #related,
+body.focus-mode ytd-watch-flexy[flexy] #secondary,
+body.focus-mode tp-yt-paper-tabs,
+body.focus-mode ytd-video-masthead-ad-v3-renderer,
+body.focus-mode ytd-display-ad-renderer,
+body.focus-mode ytd-promoted-sparkles-web-renderer,
+body.focus-mode ytd-shelf-renderer:has(a[href*="shorts"]),
+body.focus-mode #below,
+body.focus-mode #end,
+body.focus-mode ytd-playlist-panel-renderer,
+body.focus-mode #guide-button,
+body.focus-mode #country-code{
+  display: none !important;
+}
+
+body.focus-mode .custom-masthead-config {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  height: 100vh !important;
+}
+
+body.focus-mode .custom-container-config {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+}
+
+body.focus-mode .custom-start-config {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 150px !important;
+}
+
+body.focus-mode .custom-center-config {
+  min-width: 75% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 120px !important;
+  max-height: 200px !important;
+  padding: 0 !important;
+}
+
+body.focus-mode .custom-logo-container-config {
+  width: 100% !important;
+  max-width: 450px !important;
+  height: 150px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+}
+
+body.focus-mode .custom-logo-config {
+  width: 450px !important;
+  height: 100% !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* Force full width player when in focus mode */
+body.focus-mode ytd-watch-flexy[flexy] {
+  --ytd-watch-flexy-width-ratio: 1 !important;
+  --ytd-watch-flexy-height-ratio: 0.5625 !important; /* 16:9 */
+  --ytd-watch-flexy-space-below-player: 0 !important;
+  --ytd-watch-flexy-player-width: 100% !important;
+  --ytd-watch-flexy-player-height: auto !important;
+  --ytd-watch-flexy-sidebar-width: 0 !important;
+  --ytd-watch-flexy-min-player-width: 100% !important;
+}
+
+body.focus-mode ytd-watch-flexy[flexy] #primary {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 1 1 100% !important;
+}
+
+/* Resize and center search box */
+body.focus-mode.focus-home ytd-searchbox {
+  width: 100% !important;
+  max-width: 600px !important;
+  margin-top: 10px;
+}
+
+body.focus-mode ytd-masthead {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: auto;
+  width: 100%;
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+body.focus-mode ytd-searchbox {
+  width: 100% !important;
+  max-width: 600px !important;
+}
+
+body.focus-mode ytd-browse[page-subtype="home"] {
+  transition: all 0.3s ease;
+}
+
+
+/* Theatre mode */
+body.focus-mode ytd-watch-flexy[flexy] #columns {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+body.focus-mode ytd-watch-flexy[flexy] #player-theater-container {
+  height: auto !important;
+  min-height: unset !important;
+}
+
+body.focus-mode ytd-watch-flexy[flexy] #player {
+  height: auto !important;
+}
+/* */
+
+/* Center search results */
+body.focus-mode #content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+body.focus-mode #page-manager {
+  width: 90% !important;
+  min-width: 400px !important;
+  max-width: 1600px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+}
